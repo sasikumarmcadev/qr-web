@@ -7,7 +7,7 @@ export function HeroSection() {
   const phoneMockup = PlaceHolderImages.find((img) => img.id === "phone-mockup");
 
   return (
-    <section className="container grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-theme(spacing.14))] py-12 md:py-20">
+    <section className="container grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-theme(spacing.14))] py-12 md:py-20 bg-muted/50">
       <div className="flex flex-col gap-6 text-center lg:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tighter">
           <span className="text-primary"> QR scanner and generator</span> app at the lowest effort
