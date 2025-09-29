@@ -28,13 +28,13 @@ export function HeroSection() {
               iOS Version Soon
             </Button>
           </div>
-          <div className="flex justify-center lg:justify-start gap-12 text-sm text-muted-foreground mt-6">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-8 sm:gap-12 text-sm text-muted-foreground mt-6">
             <div className="text-center">
               <p className="text-4xl font-bold text-primary">99.9%</p>
               <p className="text-muted-foreground mt-1">Accuracy</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-primary flex items-center">
+              <p className="text-4xl font-bold text-primary flex items-center justify-center">
                 4.8<Star className="w-8 h-8 ml-1 fill-current" />
               </p>
               <p className="text-muted-foreground mt-1">Rating</p>
