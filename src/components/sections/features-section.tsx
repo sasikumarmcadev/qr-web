@@ -40,9 +40,9 @@ const iconColors = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-16 md:py-28 bg-muted/50">
+    <section className="py-16 md:py-28 bg-muted/50 overflow-hidden">
       <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-12">
+        <div className="max-w-2xl mx-auto text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">why chooose us</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Experience the most advanced QR code technology with unmatched precision and ease of use.
@@ -50,15 +50,17 @@ export function FeaturesSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
-              <div className={`${iconColors[index % iconColors.length].bg} p-4 rounded-full mb-4`}>
-                <feature.icon className={`w-8 h-8 ${iconColors[index % iconColors.length].text}`} />
-              </div>
-              <CardHeader className="p-0">
-                <CardTitle className="mb-2 text-xl">{feature.title}</CardTitle>
-                <CardDescription>{feature.description}</CardDescription>
-              </CardHeader>
-            </Card>
+            <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'backwards' }}>
+              <Card className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full">
+                <div className={`${iconColors[index % iconColors.length].bg} p-4 rounded-full mb-4`}>
+                  <feature.icon className={`w-8 h-8 ${iconColors[index % iconColors.length].text}`} />
+                </div>
+                <CardHeader className="p-0">
+                  <CardTitle className="mb-2 text-xl">{feature.title}</CardTitle>
+                  <CardDescription>{feature.description}</CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

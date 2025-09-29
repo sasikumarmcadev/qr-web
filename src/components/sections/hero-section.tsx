@@ -8,8 +8,8 @@ export function HeroSection() {
   const phoneMockup2 = PlaceHolderImages.find((img) => img.id === "phone-mockup-2");
 
   return (
-    <section className="container grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-theme(spacing.14))] py-12 md:py-20 bg-background">
-      <div className="flex flex-col gap-6 text-center lg:text-left">
+    <section className="container grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-theme(spacing.14))] py-12 md:py-20 bg-background overflow-hidden">
+      <div className="flex flex-col gap-6 text-center lg:text-left animate-fade-in-right">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tighter">
           <span className="text-primary"> QR scanner and generator</span> app at the lowest effort
         </h1>
@@ -43,7 +43,7 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-end">
+      <div className="flex justify-center items-end animate-fade-in-left">
         {phoneMockup1 && (
           <Image
             src={phoneMockup1.imageUrl}
