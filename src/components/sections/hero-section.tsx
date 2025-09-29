@@ -43,7 +43,7 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-4">
+      <div className="flex justify-center items-end">
         {phoneMockup1 && (
           <Image
             src={phoneMockup1.imageUrl}
@@ -51,7 +51,7 @@ export function HeroSection() {
             width={300}
             height={600}
             data-ai-hint={phoneMockup1.imageHint}
-            className="rounded-3xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
+            className="rounded-3xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[220px] sm:max-w-[280px]"
           />
         )}
         {phoneMockup2 && (
@@ -61,7 +61,7 @@ export function HeroSection() {
             width={300}
             height={600}
             data-ai-hint={phoneMockup2.imageHint}
-            className="rounded-3xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
+            className="rounded-3xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[280px] sm:max-w-[350px] -ml-16"
           />
         )}
       </div>
