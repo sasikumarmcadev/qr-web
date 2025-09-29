@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Download, Apple, CheckCircle, Star } from "lucide-react";
+import { Download, Apple, Star } from "lucide-react";
 
 export function HeroSection() {
   const phoneMockup = PlaceHolderImages.find((img) => img.id === "phone-mockup");
@@ -28,14 +28,16 @@ export function HeroSection() {
               iOS Version Soon
             </Button>
           </div>
-          <div className="flex justify-center lg:justify-start gap-6 text-sm text-muted-foreground mt-2">
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-500" />
-              <span>99.9% Accuracy</span>
+          <div className="flex justify-center lg:justify-start gap-12 text-sm text-muted-foreground mt-6">
+            <div className="text-center">
+              <p className="text-4xl font-bold text-yellow-500">99.9%</p>
+              <p className="text-muted-foreground mt-1">Accuracy</p>
             </div>
-            <div className="flex items-center gap-2">
-              <Star className="w-5 h-5 text-yellow-500" />
-              <span>4.8★ Rating</span>
+            <div className="text-center">
+              <p className="text-4xl font-bold text-yellow-500 flex items-center">
+                4.8<Star className="w-8 h-8 ml-1 fill-current" />
+              </p>
+              <p className="text-muted-foreground mt-1">Rating</p>
             </div>
           </div>
         </div>
