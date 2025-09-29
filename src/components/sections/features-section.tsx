@@ -43,7 +43,7 @@ export function FeaturesSection() {
     <section className="py-20 md:py-28 bg-muted/50">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Why Choose Scanify?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">why chooose us</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Experience the most advanced QR code technology with unmatched precision and ease of use.
           </p>
