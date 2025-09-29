@@ -71,37 +71,6 @@ export function QrCodeGenerator() {
 
   return (
     <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-8 items-start">
-      <Card className="shadow-lg">
-        <CardContent className="p-6 space-y-4">
-          <div>
-            <label htmlFor="qr-input" className="font-medium text-sm mb-2 block">
-              Enter URL or Text
-            </label>
-            <Textarea
-              id="qr-input"
-              placeholder="e.g., https://example.com"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              rows={4}
-            />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <Button onClick={handleSuggestion} disabled={isSuggesting} className="w-full">
-              {isSuggesting ? (
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              ) : (
-                <Sparkles className="mr-2 h-4 w-4" />
-              )}
-              AI Suggestion
-            </Button>
-            <Button onClick={generateQrCode} disabled={isGenerating} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-              {isGenerating ? (
-                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              ) : "Generate QR Code"}
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
       <div className="flex flex-col items-center justify-center bg-card rounded-lg p-6 min-h-[320px] shadow-lg border">
         {qrCodeUrl ? (
           <div className="flex flex-col items-center gap-4 animate-in fade-in zoom-in-95">
