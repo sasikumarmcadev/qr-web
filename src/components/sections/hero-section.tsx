@@ -51,7 +51,7 @@ export function HeroSection() {
             width={300}
             height={600}
             data-ai-hint={phoneMockup1.imageHint}
-            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
+            className="rounded-3xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
           />
         )}
         {phoneMockup2 && (
@@ -61,7 +61,7 @@ export function HeroSection() {
             width={300}
             height={600}
             data-ai-hint={phoneMockup2.imageHint}
-            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
+            className="rounded-3xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
           />
         )}
       </div>
