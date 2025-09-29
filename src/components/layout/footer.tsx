@@ -12,7 +12,7 @@ export function Footer() {
             Developed by sasikumar
           </p>
           <p className="text-center text-sm text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Scanify. All rights reserved.
+            © {new Date().getFullYear()} Qr scanner. All rights reserved.
           </p>
         </div>
       </div>
