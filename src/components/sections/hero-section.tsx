@@ -4,7 +4,8 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Download, Apple, Star } from "lucide-react";
 
 export function HeroSection() {
-  const phoneMockup = PlaceHolderImages.find((img) => img.id === "phone-mockup");
+  const phoneMockup1 = PlaceHolderImages.find((img) => img.id === "phone-mockup-1");
+  const phoneMockup2 = PlaceHolderImages.find((img) => img.id === "phone-mockup-2");
 
   return (
     <section className="container grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-theme(spacing.14))] py-12 md:py-20 bg-background">
@@ -42,15 +43,25 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        {phoneMockup && (
+      <div className="flex justify-center items-center gap-4">
+        {phoneMockup1 && (
           <Image
-            src={phoneMockup.imageUrl}
-            alt={phoneMockup.description}
-            width={350}
-            height={700}
-            data-ai-hint={phoneMockup.imageHint}
-            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md"
+            src={phoneMockup1.imageUrl}
+            alt={phoneMockup1.description}
+            width={300}
+            height={600}
+            data-ai-hint={phoneMockup1.imageHint}
+            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
+          />
+        )}
+        {phoneMockup2 && (
+          <Image
+            src={phoneMockup2.imageUrl}
+            alt={phoneMockup2.description}
+            width={300}
+            height={600}
+            data-ai-hint={phoneMockup2.imageHint}
+            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 w-full max-w-[250px] sm:max-w-[300px]"
           />
         )}
       </div>

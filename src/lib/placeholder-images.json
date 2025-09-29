@@ -5,6 +5,18 @@
       "description": "A mock phone displaying the Scanify app interface.",
       "imageUrl": "https://images.unsplash.com/photo-1700864208310-0849428c612f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwaG9uZSUyMG1vY2t1cHxlbnwwfHx8fDE3NTkxMjAzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "phone mockup"
+    },
+    {
+      "id": "phone-mockup-1",
+      "description": "A mock phone displaying the QR scanner interface.",
+      "imageUrl": "https://res.cloudinary.com/dhw6yweku/image/upload/v1759135314/Untitled_design__2_-removebg-preview_faa8za.png",
+      "imageHint": "phone mockup"
+    },
+    {
+      "id": "phone-mockup-2",
+      "description": "A mock phone displaying the QR generator interface.",
+      "imageUrl": "https://res.cloudinary.com/dhw6yweku/image/upload/v1759135248/Untitled_design__1_-removebg-preview_1_wzvxmx.png",
+      "imageHint": "phone mockup"
     }
   ]
 }
