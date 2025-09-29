@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "phone-mockup",
+      "description": "A mock phone displaying the Scanify app interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1700864208310-0849428c612f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwaG9uZSUyMG1vY2t1cHxlbnwwfHx8fDE3NTkxMjAzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phone mockup"
+    }
+  ]
 }
