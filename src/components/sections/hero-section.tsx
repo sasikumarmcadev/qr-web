@@ -31,7 +31,7 @@ export function HeroSection() {
           </div>
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-8 sm:gap-12 text-sm text-muted-foreground mt-6">
             <div className="text-center">
-              <p className="text-4xl font-bold text-accent">99.9%</p>
+              <p className="text-4xl font-bold text-primary">99.9%</p>
               <p className="text-muted-foreground mt-1">Accuracy</p>
             </div>
             <div className="text-center">
