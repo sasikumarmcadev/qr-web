@@ -35,7 +35,7 @@ export function HeroSection() {
               <p className="text-muted-foreground mt-1">Accuracy</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-accent flex items-center justify-center">
+              <p className="text-4xl font-bold text-primary flex items-center justify-center">
                 4.8<Star className="w-8 h-8 ml-1 fill-current" />
               </p>
               <p className="text-muted-foreground mt-1">Rating</p>
