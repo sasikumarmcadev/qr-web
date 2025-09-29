@@ -31,6 +31,13 @@ const features: Feature[] = [
   }
 ];
 
+const iconColors = [
+  { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" }, // Blue
+  { text: "text-[#FFA500]", bg: "bg-[#FFA500]/10" }, // Orange
+  { text: "text-[#90EE90]", bg: "bg-[#90EE90]/10" }, // Light Green
+  { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" }  // Blue again for the fourth icon
+];
+
 export function FeaturesSection() {
   return (
     <section className="py-20 md:py-28 bg-muted/50">
@@ -44,8 +51,8 @@ export function FeaturesSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
-              <div className="bg-primary/10 p-4 rounded-full mb-4">
-                <feature.icon className="w-8 h-8 text-primary" />
+              <div className={`${iconColors[index % iconColors.length].bg} p-4 rounded-full mb-4`}>
+                <feature.icon className={`w-8 h-8 ${iconColors[index % iconColors.length].text}`} />
               </div>
               <CardHeader className="p-0">
                 <CardTitle className="mb-2">{feature.title}</CardTitle>
