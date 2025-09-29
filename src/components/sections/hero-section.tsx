@@ -13,7 +13,7 @@ export function HeroSection() {
           <span className="text-primary"> QR scanner and generator</span> app at the lowest effort
         </h1>
         <p className="max-w-xl mx-auto lg:mx-0 text-lg text-muted-foreground">
-          Get more from your QR codes with our advanced AI-powered content suggestion tool! Create and scan with ease.
+          Scan QR, barcode and generate 6 types of content like WiFi, text, URL, contact, and email.
         </p>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -30,11 +30,11 @@ export function HeroSection() {
           </div>
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-8 sm:gap-12 text-sm text-muted-foreground mt-6">
             <div className="text-center">
-              <p className="text-4xl font-bold text-primary">99.9%</p>
+              <p className="text-4xl font-bold text-accent">99.9%</p>
               <p className="text-muted-foreground mt-1">Accuracy</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-primary flex items-center justify-center">
+              <p className="text-4xl font-bold text-accent flex items-center justify-center">
                 4.8<Star className="w-8 h-8 ml-1 fill-current" />
               </p>
               <p className="text-muted-foreground mt-1">Rating</p>
