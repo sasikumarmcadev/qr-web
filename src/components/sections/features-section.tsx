@@ -51,7 +51,7 @@ export function FeaturesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'backwards' }}>
-              <Card className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full">
+              <Card className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl h-full border-0">
                 <div className={`${iconColors[index % iconColors.length].bg} p-4 rounded-full mb-4`}>
                   <feature.icon className={`w-8 h-8 ${iconColors[index % iconColors.length].text}`} />
                 </div>
