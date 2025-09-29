@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ScanLine, QrCode, Sparkles, ShieldCheck } from "lucide-react";
+import { ScanLine, QrCode, Sparkles, ShieldCheck, WifiOff } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 interface Feature {
@@ -25,6 +25,11 @@ const features: Feature[] = [
     description: "Let our AI suggest engaging content for your QR codes based on URL analysis and trends."
   },
   {
+    icon: WifiOff,
+    title: "Offline Mode",
+    description: "Scan and generate QR codes even without an internet connection, ensuring reliability anytime."
+  },
+  {
     icon: ShieldCheck,
     title: "Smart History",
     description: "Access all your scanned and created codes with intelligent search and management features."
@@ -35,7 +40,8 @@ const iconColors = [
   { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" }, // Blue
   { text: "text-[#FFA500]", bg: "bg-[#FFA500]/10" }, // Orange
   { text: "text-[#90EE90]", bg: "bg-[#90EE90]/10" }, // Light Green
-  { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" }  // Blue again for the fourth icon
+  { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" },  // Blue
+  { text: "text-[#FFA500]", bg: "bg-[#FFA500]/10" }  // Orange
 ];
 
 export function FeaturesSection() {
@@ -48,7 +54,7 @@ export function FeaturesSection() {
             Experience the most advanced QR code technology with unmatched precision and ease of use.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
               <div className={`${iconColors[index % iconColors.length].bg} p-4 rounded-full mb-4`}>
