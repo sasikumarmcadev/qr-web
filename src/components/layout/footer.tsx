@@ -7,9 +7,14 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Logo />
         </div>
-        <p className="text-center text-sm text-muted-foreground md:text-left">
-          © {new Date().getFullYear()} Scanify. All rights reserved.
-        </p>
+        <div className="flex flex-col items-center md:items-end">
+          <p className="text-sm text-muted-foreground">
+            Developed by sasikumar
+          </p>
+          <p className="text-center text-sm text-muted-foreground md:text-left">
+            © {new Date().getFullYear()} Scanify. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
