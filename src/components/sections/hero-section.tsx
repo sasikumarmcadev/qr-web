@@ -10,7 +10,6 @@ export function HeroSection() {
     <section className="container grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-theme(spacing.14))] py-12 md:py-20">
       <div className="flex flex-col gap-6 text-center lg:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tighter">
-          Highest quality
           <span className="text-primary"> QR scanner and generator</span> app at the lowest effort
         </h1>
         <p className="max-w-xl mx-auto lg:mx-0 text-lg text-muted-foreground">
