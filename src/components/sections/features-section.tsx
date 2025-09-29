@@ -34,8 +34,8 @@ const features: Feature[] = [
 const iconColors = [
   { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" }, // Blue
   { text: "text-[#FFA500]", bg: "bg-[#FFA500]/10" }, // Orange
+  { text: "text-[#FFC107]", bg: "bg-[#FFC107]/10" }, // Yellow
   { text: "text-[#90EE90]", bg: "bg-[#90EE90]/10" }, // Light Green
-  { text: "text-[#007BFF]", bg: "bg-[#007BFF]/10" },  // Blue
 ];
 
 export function FeaturesSection() {
