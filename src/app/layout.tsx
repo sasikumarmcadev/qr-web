@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Scanify - QR Scanner & Generator',
+  title: 'RTC QR Scanner & Generator',
   description: 'The highest quality QR scanner and generator app, powered by AI.',
 };
 
