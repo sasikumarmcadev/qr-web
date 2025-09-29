@@ -4,7 +4,7 @@ import { Download } from 'lucide-react';
 
 export function Header() {
   return (
-    <header className="w-full border-b border-border/40 bg-background">
+    <header className="w-full border-b border-border/40 bg-background animate-fade-in-down">
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <Logo />
