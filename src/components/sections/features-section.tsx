@@ -11,8 +11,8 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: ScanLine,
-    title: "Instant Scanning",
-    description: "Real-time QR code scanning with 99.9% accuracy guaranteed using advanced camera optics."
+    title: "Scan QR & Barcode",
+    description: "Instantly scan both QR codes and barcodes with high accuracy using your device's camera."
   },
   {
     icon: QrCode,
