@@ -50,7 +50,7 @@ export function HeroSection() {
             width={350}
             height={700}
             data-ai-hint={phoneMockup.imageHint}
-            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
+            className="rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 w-full max-w-xs sm:max-w-sm md:max-w-md"
           />
         )}
       </div>

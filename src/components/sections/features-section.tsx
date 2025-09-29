@@ -40,7 +40,7 @@ const iconColors = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 md:py-28 bg-muted/50">
+    <section className="py-16 md:py-28 bg-muted/50">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">why chooose us</h2>
@@ -48,14 +48,14 @@ export function FeaturesSection() {
             Experience the most advanced QR code technology with unmatched precision and ease of use.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col items-center text-center p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
               <div className={`${iconColors[index % iconColors.length].bg} p-4 rounded-full mb-4`}>
                 <feature.icon className={`w-8 h-8 ${iconColors[index % iconColors.length].text}`} />
               </div>
               <CardHeader className="p-0">
-                <CardTitle className="mb-2">{feature.title}</CardTitle>
+                <CardTitle className="mb-2 text-xl">{feature.title}</CardTitle>
                 <CardDescription>{feature.description}</CardDescription>
               </CardHeader>
             </Card>
