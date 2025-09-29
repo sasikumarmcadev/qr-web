@@ -17,10 +17,12 @@ export function HeroSection() {
           Get more from your QR codes with our advanced AI-powered content suggestion tool! Create and scan with ease.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <Button size="lg">
-            <Download className="mr-2" />
-            Download Android APK
-          </Button>
+          <a href="https://github.com/sasikumarmcadev/qr-apk/raw/refs/heads/main/qrscanner.apk" target="_blank" rel="noopener noreferrer">
+            <Button size="lg">
+              <Download className="mr-2" />
+              Download Android APK
+            </Button>
+          </a>
           <Button size="lg" variant="outline" disabled>
             <Apple className="mr-2" />
             iOS Version Soon

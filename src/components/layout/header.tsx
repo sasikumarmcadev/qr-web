@@ -10,10 +10,12 @@ export function Header() {
           <Logo />
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button>
-            <Download className="mr-2 h-4 w-4" />
-            Download APK
-          </Button>
+          <a href="https://github.com/sasikumarmcadev/qr-apk/raw/refs/heads/main/qrscanner.apk" target="_blank" rel="noopener noreferrer">
+            <Button>
+              <Download className="mr-2 h-4 w-4" />
+              Download APK
+            </Button>
+          </a>
         </div>
       </div>
     </header>
