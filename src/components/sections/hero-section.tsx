@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Download, Apple } from "lucide-react";
+import { Download, Apple, CheckCircle, Star } from "lucide-react";
 
 export function HeroSection() {
   const phoneMockup = PlaceHolderImages.find((img) => img.id === "phone-mockup");
@@ -16,17 +16,29 @@ export function HeroSection() {
         <p className="max-w-xl mx-auto lg:mx-0 text-lg text-muted-foreground">
           Get more from your QR codes with our advanced AI-powered content suggestion tool! Create and scan with ease.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a href="https://github.com/sasikumarmcadev/qr-apk/raw/refs/heads/main/qrscanner.apk" target="_blank" rel="noopener noreferrer">
-            <Button size="lg">
-              <Download className="mr-2" />
-              Download Android APK
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="https://github.com/sasikumarmcadev/qr-apk/raw/refs/heads/main/qrscanner.apk" target="_blank" rel="noopener noreferrer">
+              <Button size="lg">
+                <Download className="mr-2" />
+                Download Android APK
+              </Button>
+            </a>
+            <Button size="lg" variant="outline" disabled>
+              <Apple className="mr-2" />
+              iOS Version Soon
             </Button>
-          </a>
-          <Button size="lg" variant="outline" disabled>
-            <Apple className="mr-2" />
-            iOS Version Soon
-          </Button>
+          </div>
+          <div className="flex justify-center lg:justify-start gap-6 text-sm text-muted-foreground mt-2">
+            <div className="flex items-center gap-2">
+              <CheckCircle className="w-5 h-5 text-green-500" />
+              <span>99.9% Accuracy</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Star className="w-5 h-5 text-yellow-500" />
+              <span>4.8★ Rating</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex justify-center">
